@@ -1,7 +1,7 @@
 # Pado
-Das Modul dient zum Empfangen von Geofencing Daten des Tools "Pado". Damit ist es möglich, das Verlassen und Betreten von Orten in IP-Symcon zu registrieren.
+Das Modul dient zum Empfangen von Geofencing Daten der iOS App "Pado". Damit ist es möglich, das Verlassen und Betreten von Orten in IP-Symcon zu registrieren.
 
-Das Modul ist aus dem Geofency Modul der Symcon GmbH entstanden. Meinen Dank an der Stelle für das freundliche zur Verfügung Stellen des Codes.
+Das Modul ist aus dem Geofency Modul der Symcon GmbH entstanden. Meinen Dank an der Stelle für das freundliche zur Verfügung stellen des Codes.
  
 ### Inhaltsverzeichnis
 
@@ -50,7 +50,7 @@ Unter _Einstellungen -> Export -> WebHook_ sind die Verbindungsdaten zu IP-Symco
 
 Unter Aktionen ist mit + eine neue Aktion hinzuzufügen.
 
-![](../imgs/Aktionen.png)
+![](imgs/Aktionen.png)
 
 In der Aktion wird der Ort und die Aktion (Ort verlassen/Ort betreten) angegeben.
 
@@ -97,7 +97,7 @@ Beispielstandort (MyHome) | Boolean         | Anwesenheit oder Abwesenheit. Info
 
 
 Beispiel:
-![](../imgs/PadoVariablen.png)
+![](imgs/PadoVariablen.png)
 
 ##### Profile:
 
