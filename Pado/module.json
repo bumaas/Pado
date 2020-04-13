@@ -1,0 +1,12 @@
+{
+  "id":                 "{3AD573C1-C1C9-97D3-A18E-81DFAB6F05A6}",
+  "name":               "Pado",
+  "type":               0,
+  "vendor":             "",
+  "aliases":            [],
+  "parentRequirements": [],
+  "childRequirements":  [],
+  "implemented":        [],
+  "prefix":             "PAD",
+  "url":                "https://github.com/bumaas/Pado/blob/master/README.md"
+}
