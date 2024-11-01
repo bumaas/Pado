@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 include __DIR__ . '/../libs/WebHookModule.php';
-define('DUMMY_MODULE_ID', '{485D0419-BE97-4548-AA9C-C083EB82E61E}');
+const DUMMY_MODULE_ID = '{485D0419-BE97-4548-AA9C-C083EB82E61E}';
 
 class Pado extends WebHookModule
 {
@@ -12,7 +12,7 @@ class Pado extends WebHookModule
         parent::__construct($InstanceID, 'pado');
     }
 
-    public function Create()
+    public function Create(): void
     {
         //Never delete this line!
         parent::Create();
@@ -21,7 +21,7 @@ class Pado extends WebHookModule
         $this->RegisterPropertyString('Password', '');
     }
 
-    public function ApplyChanges()
+    public function ApplyChanges(): void
     {
         //Never delete this line!
         parent::ApplyChanges();
@@ -36,7 +36,7 @@ class Pado extends WebHookModule
     /**
      * This function will be called by the hook control. Visibility should be protected!
      */
-    protected function ProcessHookData()
+    protected function ProcessHookData(): void
     {
         //Never delete this line!
         parent::ProcessHookData();

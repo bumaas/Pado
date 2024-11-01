@@ -4,9 +4,9 @@
 	"name": "Pado",
 	"url": "",
 	"compatibility": {
-		"version": "5.3"
+		"version": "7.0"
 	},
 	"version": "1.0",
-	"build": 1,
-	"date": 1586766227
+	"build": 2,
+	"date": 1730455662
 }
