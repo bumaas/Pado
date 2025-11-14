@@ -46,7 +46,7 @@ class WebHookModule extends IPSModuleStrict
         }
     }
 
-    protected function RegisterHook($HookPath): void
+    protected function RegisterHook($HookPath): bool
     {
         $ids = IPS_GetInstanceListByModuleID('{015A6EB8-D6E5-4B93-B496-0D3F77AE9FE1}');
         if (count($ids) > 0) {
@@ -55,7 +55,7 @@ class WebHookModule extends IPSModuleStrict
             foreach ($hooks as $index => $hook) {
                 if ($hook['Hook'] === $HookPath) {
                     if ($hook['TargetID'] === $this->InstanceID) {
-                        return;
+                        return true;
                     }
                     $hooks[$index]['TargetID'] = $this->InstanceID;
                     $found = true;
@@ -67,6 +67,7 @@ class WebHookModule extends IPSModuleStrict
             IPS_SetProperty($ids[0], 'Hooks', json_encode($hooks));
             IPS_ApplyChanges($ids[0]);
         }
+        return true;
     }
 
     /**

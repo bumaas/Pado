@@ -26,7 +26,7 @@ class Pado extends WebHookModule
         //Never delete this line!
         parent::ApplyChanges();
 
-        //Cleanup old hook script
+        //Clean up the old hook script
         $id = @IPS_GetObjectIDByIdent('Hook', $this->InstanceID);
         if ($id > 0) {
             IPS_DeleteScript($id, true);
