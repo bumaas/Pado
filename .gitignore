@@ -55,4 +55,6 @@ Temporary Items
 # Test directory
 # ===============
 
-tests
+tests/*
+!tests/check-*.php
+!tests/readme-bekannt.json
