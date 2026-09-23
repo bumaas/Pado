@@ -1,5 +1,5 @@
 # Pado
-Das Modul dient zum Empfangen von Geofencing Daten der iOS App "Pado". Damit ist es möglich, das Verlassen und Betreten von Orten in IP-Symcon zu registrieren.
+Das Modul dient zum Empfangen von Geofencing Daten der iOS App "Pado". Damit ist es möglich, das Verlassen und Betreten von Orten in Symcon zu registrieren.
 
 Das Modul ist aus dem Geofency Modul der Symcon GmbH entstanden. Meinen Dank an der Stelle für das freundliche zur Verfügung stellen des Codes.
  
@@ -9,7 +9,7 @@ Das Modul ist aus dem Geofency Modul der Symcon GmbH entstanden. Meinen Dank an 
 2. [Voraussetzungen](#2-voraussetzungen)
 3. [Software-Installation](#3-software-installation)
 4. [Pado Konfiguration](#4-pado-konfiguration)
-5. [Einrichten der Instanzen in IP-Symcon](#5-einrichten-der-instanzen-in-ip-symcon)
+5. [Einrichten der Instanzen in Symcon](#5-einrichten-der-instanzen-in-symcon)
 6. [Statusvariablen und Profile](#6-statusvariablen-und-profile)
 7. [WebFront](#7-webfront)
 8. [PHP-Befehlsreferenz](#8-php-befehlsreferenz)
@@ -18,14 +18,14 @@ Das Modul ist aus dem Geofency Modul der Symcon GmbH entstanden. Meinen Dank an 
 ### 1. Funktionsumfang
 
 * Pro Gerät eine eigene Standortliste
-* Benutzername und Passwort Identifikation innerhalb von IP-Symcon.
+* Benutzername und Passwort Identifikation innerhalb von Symcon.
 * Richtet automatisch den Webhook "/hook/pado" ein.
 * Es wird empfohlen dies in Kombination mit dem Connect Modul zu nutzen.
 * Optional kann der aktuelle Standort von Pado übermittelt werden
 
 ### 2. Voraussetzungen
 
-- IP-Symcon ab Version 5.3
+- Symcon ab Version 5.3
 - Pado App für Apple iOS
 
 ### 3. Software-Installation
@@ -35,16 +35,16 @@ Das Modul ist aus dem Geofency Modul der Symcon GmbH entstanden. Meinen Dank an 
 
 ### 4. Pado Konfiguration
 
-Unter _Einstellungen -> Export -> WebHook_ sind die Verbindungsdaten zu IP-Symcon einzutragen.
+Unter _Einstellungen -> Export -> WebHook_ sind die Verbindungsdaten zu Symcon einzutragen.
 
 ![](imgs/WebHook.png)
 
 
-- URL: Als URL wird die Domain eingetragen, unter der IP-Symcon zu erreichen ist, gefolgt von _/hook/pado_. Am einfachsten ist es, dort die IP-Symcon Connect Adresse einzutragen gefolgt von _/hook/pado_.
+- URL: Als URL wird die Domain eingetragen, unter der Symcon zu erreichen ist, gefolgt von _/hook/pado_. Am einfachsten ist es, dort die Symcon Connect Adresse einzutragen gefolgt von _/hook/pado_.
 
-- Name: Der Webhook Benutzername, der dann in IP-Symcon hinterlegt wird
+- Name: Der Webhook Benutzername, der dann in Symcon hinterlegt wird
 
-- Passwort: Das Webhook Passwort, das dann in IP-Symcon hinterlegt wird 
+- Passwort: Das Webhook Passwort, das dann in Symcon hinterlegt wird 
 
 #### Aktion
 
@@ -66,7 +66,7 @@ _Parameter als JSON_ muss deaktiviert sein.
 ##### Post Parameter
 Als Post Parameter sind mindestens die Variablen "name", "id" und "device" sowie "enter" oder "exit" zu aktivieren.
 
-### 5. Einrichten der Instanzen in IP-Symcon
+### 5. Einrichten der Instanzen in Symcon
 
 - Unter "Instanz hinzufügen" ist das 'Pado'-Modul unter dem Hersteller '(Kern)' aufgeführt.
 
@@ -74,10 +74,10 @@ __Konfigurationsseite__:
 
 Name         | Beschreibung
 ------------ | ---------------------------------
-Benutzername | Benutzername, welcher in der Pado App angegeben werden muss, um IP-Symcon Daten schicken zu können.
+Benutzername | Benutzername, welcher in der Pado App angegeben werden muss, um Symcon Daten schicken zu können.
 Passwort     | Passwort, welches in der Pado App angeben werden muss.
 
-_Werden diese Daten Leer gelassen kann jeder über den Hook Daten an IP-Symcon schicken._
+_Werden diese Daten Leer gelassen kann jeder über den Hook Daten an Symcon schicken._
 
 ### 6. Statusvariablen und Profile
 
